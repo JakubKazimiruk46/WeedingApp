@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Restauracji</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <h1 class="app-title">
+                    Wesele Adriana i Ilony
+                </h1>
+                <p class="app-subtitle">29.08.2025</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Menu Button -->
+            <div class="menu-card">
+                <button class="menu-button" data-target="menu1">
+                    <div class="button-content">
+                        <i class="fas fa-book-open"></i>
+                        <span>Menu</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </div>
+                </button>
+                <div class="menu-content" id="menu1">
+                    <div class="content-inner">
+                        <div class="section-header">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Nasze Menu</h3>
+                        </div>
+                        
+                        <div class="menu-category">
+                            <h4><i class="fas fa-pizza-slice"></i> Dania główne</h4>
+                            <div class="food-item">
+                                <div class="food-info">
+                                    <span class="food-name">Pizza Margherita</span>
+                                    <span class="food-desc">Sos pomidorowy, mozzarella, bazylia</span>
+                                </div>
+                                <span class="food-price">25 zł</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-badge">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Godziny otwarcia</strong>
+                                <p>Pn-Pt: 12:00 - 22:00<br>Sb-Nd: 14:00 - 23:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Button -->
+            <div class="menu-card">
+                <button class="menu-button" data-target="menu2">
+                    <div class="button-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Sprawdź gdzie siedzisz!</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </div>
+                </button>
+                <div class="menu-content" id="menu2">
+                    <div class="content-inner">
+                        <div class="section-header">
+                            <i class="fas fa-map"></i>
+                            <h3>Znajdź swoje miejsce</h3>
+                        </div>
+                        
+                        <div class="location-guide">
+                            <div class="guide-step">
+                                <div class="step-number">1</div>
+                                <p>Wpisz swoje imię</p>
+                            </div>
+                            <div class="name-input-section">
+                            <div class="form-group">
+                                <label><i class="fas fa-user"></i> Twoje imię i nazwisko</label>
+                                <input type="text" id="guestName" placeholder="Wpisz swoje imię i nazwisko..." class="name-input">
+                            </div>
+                        </div>
+                            <div class="guide-step">
+                                <div class="step-number">2</div>
+                                <p>Znajdź swój stolik na mapie poniżej</p>
+                            </div>
+                        </div>
+
+                        <div class="table-map">
+                            <h4><i class="fas fa-chair"></i> Mapa stolików</h4>
+                            <div class="restaurant-layout">
+                                <div class="table-area left-area">
+                                    <div class="table-item horizontal" data-table="1">
+                                        <span class="table-number">1</span>
+                                    </div>
+                                    <div class="table-item horizontal" data-table="2">
+                                        <span class="table-number">2</span>
+                                    </div>
+                                </div>
+                                <div class="table-area right-area">
+                                    <div class="table-item vertical" data-table="3">
+                                        <span class="table-number">3</span>
+                                    </div>
+                                    <div class="table-item vertical" data-table="4">
+                                        <span class="table-number">4</span>
+                                    </div>
+                                    <div class="table-item vertical" data-table="5">
+                                        <span class="table-number">5</span>
+                                    </div>
+                                </div>
+                                <div class="entrance-label">
+                                    <i class="fas fa-door-open"></i>
+                                    <span>Wejście</span>
+                                </div>
+                            </div>
+                            <div class="map-legend">
+                                <i class="fas fa-door-open"></i>
+                                <span>Wejście główne</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory Button -->
+            <div class="menu-card">
+                <button class="menu-button" data-target="menu3">
+                    <div class="button-content">
+                        <i class="fas fa-heart"></i>
+                        <span>Zostaw <span class="highlight">nam pamiątkę</span></span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </div>
+                </button>
+                <div class="menu-content" id="menu3">
+                    <div class="content-inner">
+                        <div class="section-header">
+                            <i class="fas fa-book-heart"></i>
+                            <h3>Książka gości</h3>
+                        </div>
+                        
+                        <p class="section-description">
+                            Podziel się swoimi wrażeniami z tego wyjątkowego wieczoru!
+                        </p>
+
+                        <p class="mess-link">
+                            Wyślij nam zdjęcia na <a href="http://m.me/adrian.kazimiruk">Messengerze!</a>
+                        </p>
+                        <p class="mess-link">
+                             
+                            Albo na <a href="http://m.me/adrian.kazimiruk">WhatsApp</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule Button -->
+            <div class="menu-card">
+                <button class="menu-button" data-target="menu4">
+                    <div class="button-content">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Plan Wieczoru</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </div>
+                </button>
+                <div class="menu-content" id="menu4">
+                    <div class="content-inner">
+                        <div class="section-header">
+                            <i class="fas fa-clock"></i>
+                            <h3>Program wieczoru</h3>
+                        </div>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-time">18:00</div>
+                                <div class="timeline-content">
+                                    <h4><i class="fas fa-glass-cheers"></i> Przywitanie</h4>
+                                    <p>Welcome drink i przedstawienie menu</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">18:30</div>
+                                <div class="timeline-content">
+                                    <h4><i class="fas fa-seedling"></i> Przystawki</h4>
+                                    <p>Serwowanie różnorodnych przystawek</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">19:30</div>
+                                <div class="timeline-content">
+                                    <h4><i class="fas fa-utensils"></i> Danie główne</h4>
+                                    <p>Podanie głównych potraw według wyboru</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">20:30</div>
+                                <div class="timeline-content">
+                                    <h4><i class="fas fa-music"></i> Muzyka live</h4>
+                                    <p>Występ zespołu jazzowego "Blue Notes"</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">21:30</div>
+                                <div class="timeline-content">
+                                    <h4><i class="fas fa-birthday-cake"></i> Deser</h4>
+                                    <p>Słodkie zakończenie z kawą lub herbatą</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-time">22:30</div>
+                                <div class="timeline-content">
+                                    <h4><i class="fas fa-heart"></i> Zakończenie</h4>
+                                    <p>Pożegnanie i podziękowania</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-badge">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <strong>Informacja</strong>
+                                <p>Program może ulec drobnym zmianom w zależności od sytuacji</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p><i class="fas fa-heart"></i> Dziękujemy za przybycie!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
