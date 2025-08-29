@@ -940,4 +940,137 @@ body {
         font-size: 1rem;
     }
 }
+.taxi-contact {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.taxi-info h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taxi-info h4::before {
+    content: "🚕";
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.taxi-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+.call-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    color: #4caf50;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.call-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: #f8f8f8;
+}
+
+.call-button:active {
+    transform: scale(0.98);
+}
+
+.call-button i {
+    font-size: 1.2rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.taxi-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.tip-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px 20px;
+    border-radius: 12px;
+    color: #333;
+    transition: transform 0.2s ease;
+}
+
+.tip-item:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.tip-item i {
+    color: #4caf50;
+    font-size: 1.3rem;
+    margin-right: 15px;
+    width: 25px;
+    text-align: center;
+}
+
+.tip-item span {
+    font-weight: 600;
+    color: #444;
+}
+
+/* Responsywność dla małych ekranów */
+@media (max-width: 400px) {
+    .taxi-contact {
+        padding: 20px 15px;
+    }
+    
+    .taxi-number {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+    
+    .call-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .tip-item {
+        padding: 12px 15px;
+    }
+    
+    .tip-item i {
+        font-size: 1.1rem;
+        margin-right: 12px;
+    }
+}
 }
